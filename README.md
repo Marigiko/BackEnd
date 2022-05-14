@@ -2,7 +2,7 @@
 WebApp with login, sing up and Two Factor Authentication
 
 
-# create a mySql database named as you like
+* create a mySql database named as you like
 
 run   npm install
 
