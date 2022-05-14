@@ -4,7 +4,7 @@ WebApp with login, sing up and Two Factor Authentication
 
 * create a mySql database named as you like
 
-* run   npm install
+* run  code:"npm install"
 
 * run   touch .env  in the root of your repository
 
