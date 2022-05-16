@@ -21,7 +21,6 @@ router.post('/singup', (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     password: req.body.password,
-    isValid: false,
   })
     .then((dbResponse) => {
       res.json(dbResponse);
@@ -39,8 +38,7 @@ router.get('/two_auth_qr', (req, res) => {
 });
 
 router.post('/two_auth_token', (req, res) => {
-  let validatedToken = authenticator.verifyToken(req.body.key, req.body.token); 
-  
+  let validatedToken = authenticator.verifyToken(req.body.key, req.body.token);   
   if(validatedToken.delta) {
     res.json({ validated: true });
   } else {
@@ -104,7 +102,7 @@ router.get('/verify/:id',(req, res) => {
 
   if(id == Rand) {
     console.log("email if verified"); 
-    res.end(`<h1>Email is been Successfully verified`);
+    res.end(`<h1>Email is been Successfully verified<h1>`);
   } else {
     console.log("email is not verified");
     res.end("<h1>Bad Request</h1>");
