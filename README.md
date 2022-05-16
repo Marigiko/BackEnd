@@ -15,5 +15,7 @@ WebApp with login, sing up and Two Factor Authentication
        DB_HOST=127.0.0.1
        DB_USER=root
        DB_NAME=yourDBname
+       EMAIL_USER=yourGmail
+       EMAIL_PASS=yourPass
 
 * run   npm start in the root of the project to start the server
